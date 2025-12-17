@@ -2,4 +2,7 @@
   (version 7)
   (lib (name "MAX5026EUT_T")(type "KiCad")(uri "${KIPRJMOD}/Lib/MAX5026EUT_T.kicad_sym")(options "")(descr ""))
   (lib (name "TPS7A0233PDBVR")(type "KiCad")(uri "${KIPRJMOD}/Lib/TPS7A0233PDBVR.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74LVC1G74DCUT")(type "KiCad")(uri "${KIPRJMOD}/Lib/SN74LVC1G74DCUT.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV70433DBVT")(type "KiCad")(uri "${KIPRJMOD}/Lib/TLV70433DBVT.kicad_sym")(options "")(descr ""))
+  (lib (name "STM32F042F6P6")(type "KiCad")(uri "${KIPRJMOD}/Lib/STM32F042F6P6.kicad_sym")(options "")(descr ""))
 )
