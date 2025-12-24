@@ -1,2 +1,2 @@
 # mu
-SiPM muon detector
+SiPM muon detector!
