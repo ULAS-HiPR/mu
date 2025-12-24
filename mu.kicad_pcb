@@ -12894,6 +12894,14 @@
 		(uuid "0525efa9-f074-4672-a4e7-63395d928c94")
 	)
 	(segment
+		(start 74.282532 102.348)
+		(end 74.637 102.348)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "0c7a7c47-99d6-4472-9ebd-e6ed351be450")
+	)
+	(segment
 		(start 68.8145 98.848)
 		(end 68.8145 99.848)
 		(width 0.2)
@@ -12956,6 +12964,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "3b46031f-34bc-44b4-abf2-7620d8b425c4")
+	)
+	(segment
+		(start 73.782532 102.848)
+		(end 74.282532 102.348)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "4701ce87-44d7-4d16-b3c7-742efcede1ff")
 	)
 	(segment
 		(start 75.6945 107.328)
@@ -13038,6 +13054,14 @@
 		(uuid "6a8c694b-ca81-4c55-b038-50f63b49d742")
 	)
 	(segment
+		(start 72.6495 102.848)
+		(end 73.782532 102.848)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "6d0a5f88-66e0-4526-97a7-c52be71539d9")
+	)
+	(segment
 		(start 68.7745 96.848)
 		(end 68.595 96.848)
 		(width 0.2)
@@ -13078,6 +13102,14 @@
 		(uuid "9092d9ae-2625-46aa-84fa-f996315caf2c")
 	)
 	(segment
+		(start 75.299499 102.348)
+		(end 76.249499 101.398)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "99890e22-7429-42d6-a3e1-c919dca10aa0")
+	)
+	(segment
 		(start 87.942528 97.331)
 		(end 88.095 97.483472)
 		(width 0.2)
@@ -13100,6 +13132,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "b2a35fe0-2cbb-409f-9736-23a8525b38da")
+	)
+	(segment
+		(start 76.249499 101.398)
+		(end 76.912 101.398)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "ba2a5a40-8995-4ef9-8b6f-45b9ecc17387")
 	)
 	(segment
 		(start 77.2745 107.328)
@@ -13141,6 +13181,14 @@
 		(net 1)
 		(uuid "fa1b85d5-d069-445a-a63d-04e8bcfb2e7f")
 	)
+	(segment
+		(start 74.637 102.348)
+		(end 75.299499 102.348)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "fd05b745-d9b5-4fe5-ab3c-4ff70923062e")
+	)
 	(via
 		(at 67.5 97.943)
 		(size 0.6)
@@ -13181,6 +13229,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "4babe9e8-0052-4f7f-8582-48fb8f0c4a7b")
+	)
+	(via
+		(at 77.5 98.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 1)
+		(uuid "7dfc3669-4584-44f0-8dca-6465e582e959")
 	)
 	(via
 		(at 86.595 102.5)

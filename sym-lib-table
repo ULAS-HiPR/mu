@@ -7,5 +7,7 @@
   (lib (name "STM32F042F6P6")(type "KiCad")(uri "${KIPRJMOD}/Lib/STM32F042F6P6.kicad_sym")(options "")(descr ""))
   (lib (name "SRN4018 470M")(type "KiCad")(uri "${KIPRJMOD}/Lib/SRN4018 470M.kicad_sym")(options "")(descr ""))
   (lib (name "MICROFC-60035-SMT-TR1")(type "KiCad")(uri "${KIPRJMOD}/Lib/MICROFC-60035-SMT-TR1.kicad_sym")(options "")(descr ""))
-  (lib (name "decal")(type "KiCad")(uri "${KIPRJMOD}/decal.kicad_sym")(options "")(descr ""))
+  (lib (name "LM4040AIM3-2-5-NOPB")(type "KiCad")(uri "${KIPRJMOD}/Lib/LM4040AIM3-2-5-NOPB.kicad_sym")(options "")(descr ""))
+  (lib (name "OPA656NB-250")(type "KiCad")(uri "${KIPRJMOD}/Lib/OPA656NB-250.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV3601DCKT")(type "KiCad")(uri "${KIPRJMOD}/Lib/TLV3601DCKT.kicad_sym")(options "")(descr ""))
 )

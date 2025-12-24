@@ -1,5 +1,5 @@
 
-(footprint XDCR_MICROFC-60035-SMT-TR1 (layer F.Cu) (tedit 69428FFB)
+(footprint XDCR_MICROFC-60035-SMT-TR1 (layer F.Cu) (tedit 69498A3D)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -1.768 -4.2064 0) (layer F.SilkS)
