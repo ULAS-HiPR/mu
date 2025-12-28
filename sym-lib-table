@@ -9,6 +9,7 @@
   (lib (name "MICROFC-60035-SMT-TR1")(type "KiCad")(uri "${KIPRJMOD}/Lib/MICROFC-60035-SMT-TR1.kicad_sym")(options "")(descr ""))
   (lib (name "LM4040AIM3-2-5-NOPB")(type "KiCad")(uri "${KIPRJMOD}/Lib/LM4040AIM3-2-5-NOPB.kicad_sym")(options "")(descr ""))
   (lib (name "OPA656NB-250")(type "KiCad")(uri "${KIPRJMOD}/Lib/OPA656NB-250.kicad_sym")(options "")(descr ""))
-  (lib (name "TLV3601DCKT")(type "KiCad")(uri "${KIPRJMOD}/Lib/TLV3601DCKT.kicad_sym")(options "")(descr ""))
   (lib (name "MCP4921ESN")(type "KiCad")(uri "${KIPRJMOD}/Lib/MCP4921ESN.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV3603")(type "KiCad")(uri "${KIPRJMOD}/Lib/TLV3603.kicad_sym")(options "")(descr ""))
+  (lib (name "USB4105-GF-A")(type "KiCad")(uri "${KIPRJMOD}/Lib/USB4105-GF-A.kicad_sym")(options "")(descr ""))
 )
