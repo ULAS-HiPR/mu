@@ -14,4 +14,6 @@
   (lib (name "USB4105-GF-A")(type "KiCad")(uri "${KIPRJMOD}/Lib/USB4105-GF-A.kicad_sym")(options "")(descr ""))
   (lib (name "USBLC6-2SC6")(type "KiCad")(uri "${KIPRJMOD}/Lib/USBLC6-2SC6.kicad_sym")(options "")(descr ""))
   (lib (name "NUP2105LT1G")(type "KiCad")(uri "${KIPRJMOD}/Lib/NUP2105LT1G.kicad_sym")(options "")(descr ""))
+  (lib (name "ESQ-110-X-X-D")(type "KiCad")(uri "${KIPRJMOD}/Lib/ESQ-110-X-X-D.kicad_sym")(options "")(descr ""))
+  (lib (name "Wago 2060-1452 998-404")(type "KiCad")(uri "${KIPRJMOD}/Lib/Wago 2060-1452 998-404.kicad_sym")(options "")(descr ""))
 )
