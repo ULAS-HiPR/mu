@@ -20,4 +20,5 @@
   (lib (name "BAT46J")(type "KiCad")(uri "${KIPRJMOD}/Lib/BAT46J.kicad_sym")(options "")(descr ""))
   (lib (name "IPP80P03P4L04AKSA1")(type "KiCad")(uri "${KIPRJMOD}/Lib/IPP80P03P4L04AKSA1.kicad_sym")(options "")(descr ""))
   (lib (name "XT30PW-M")(type "KiCad")(uri "${KIPRJMOD}/Lib/XT30PW-M.kicad_sym")(options "")(descr ""))
+  (lib (name "U.FL-R-SMT-1_10_")(type "KiCad")(uri "${KIPRJMOD}/Lib/U.FL-R-SMT-1_10_.kicad_sym")(options "")(descr ""))
 )
