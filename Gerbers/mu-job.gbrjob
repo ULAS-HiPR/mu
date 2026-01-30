@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.6"
     },
-    "CreationDate": "2026-01-16T15:37:09+00:00"
+    "CreationDate": "2026-01-30T11:20:47+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -37,7 +37,7 @@
       "PadToPad": 0.0,
       "PadToTrack": 0.0,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2,
+      "MinLineWidth": 0.1,
       "TrackToRegion": 0.2,
       "RegionToRegion": 0.2
     }
@@ -71,16 +71,6 @@
     {
       "Path": "mu-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "mu-F_Silkscreen.gbr",
-      "FileFunction": "Legend,Top",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "mu-B_Silkscreen.gbr",
-      "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {

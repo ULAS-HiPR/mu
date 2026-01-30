@@ -105,7 +105,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_5755f55f)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -25204,6 +25204,7 @@
 		(property "Reference" "J1"
 			(at 1.27 6.1 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "cd4f3d60-0c81-40d3-9cfb-8e0e85b080f1")
 			(effects
 				(font
@@ -28363,6 +28364,7 @@
 		(property "Reference" "J5"
 			(at -9.825 3.635 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "7b8e89f9-8481-446b-9d9e-777e93838a3d")
 			(effects
 				(font
@@ -39621,6 +39623,14 @@
 		(uuid "0486c697-4b3d-4664-b2fa-5e5bd3812078")
 	)
 	(segment
+		(start 160.4 80.821635)
+		(end 160.321668 80.899967)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "089e48f4-d47b-4901-84a9-947101cf822f")
+	)
+	(segment
 		(start 160.3 92.464001)
 		(end 160.414999 92.579)
 		(width 0.2)
@@ -39683,6 +39693,14 @@
 		(layer "B.Cu")
 		(net 1)
 		(uuid "289ef046-343c-4294-8560-4bec52ff2398")
+	)
+	(segment
+		(start 160.4 79.649454)
+		(end 160.4 80.821635)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "385fd46d-fe23-40eb-a543-8dff55343e16")
 	)
 	(segment
 		(start 153.264761 90.494309)

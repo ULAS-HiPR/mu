@@ -9105,7 +9105,7 @@
 		)
 		(uuid "5eda583e-3b33-46b1-b868-25204675c4b9")
 	)
-	(text "interboard connector"
+	(text "interboard connector standard\n(not placed, just for reference)"
 		(exclude_from_sim no)
 		(at 369.57 248.412 0)
 		(effects
