@@ -738,7 +738,7 @@
       "model_mode": 4,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "PowerConversion",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -754,6 +754,10 @@
     [
       "0020f91a-50ae-478d-8303-55d8991d2d34",
       "Root"
+    ],
+    [
+      "9e4dd771-0c3b-45b5-a281-8d289f4a04ba",
+      "power"
     ]
   ],
   "text_variables": {}

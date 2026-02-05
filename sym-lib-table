@@ -25,4 +25,6 @@
   (lib (name "5023860570")(type "KiCad")(uri "${KIPRJMOD}/Lib/5023860570.kicad_sym")(options "")(descr ""))
   (lib (name "IPD90P04P4L04ATMA1")(type "KiCad")(uri "${KIPRJMOD}/Lib/IPD90P04P4L04ATMA1.kicad_sym")(options "")(descr ""))
   (lib (name "S2761-46R")(type "KiCad")(uri "${KIPRJMOD}/Lib/S2761-46R.kicad_sym")(options "")(descr ""))
+  (lib (name "LT3045EDD_PBF")(type "KiCad")(uri "${KIPRJMOD}/Lib/LT3045EDD_PBF.kicad_sym")(options "")(descr ""))
+  (lib (name "MPM3650CGQW-P")(type "KiCad")(uri "${KIPRJMOD}/Lib/MPM3650CGQW-P.kicad_sym")(options "")(descr ""))
 )
