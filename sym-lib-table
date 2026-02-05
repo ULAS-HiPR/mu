@@ -22,4 +22,7 @@
   (lib (name "XT30PW-M")(type "KiCad")(uri "${KIPRJMOD}/Lib/XT30PW-M.kicad_sym")(options "")(descr ""))
   (lib (name "U.FL-R-SMT-1_10_")(type "KiCad")(uri "${KIPRJMOD}/Lib/U.FL-R-SMT-1_10_.kicad_sym")(options "")(descr ""))
   (lib (name "STDCRA38M")(type "KiCad")(uri "${KIPRJMOD}/Lib/STDCRA38M.kicad_sym")(options "")(descr ""))
+  (lib (name "5023860570")(type "KiCad")(uri "${KIPRJMOD}/Lib/5023860570.kicad_sym")(options "")(descr ""))
+  (lib (name "IPD90P04P4L04ATMA1")(type "KiCad")(uri "${KIPRJMOD}/Lib/IPD90P04P4L04ATMA1.kicad_sym")(options "")(descr ""))
+  (lib (name "S2761-46R")(type "KiCad")(uri "${KIPRJMOD}/Lib/S2761-46R.kicad_sym")(options "")(descr ""))
 )
