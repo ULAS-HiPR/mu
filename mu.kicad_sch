@@ -5,6 +5,358 @@
 	(uuid "0020f91a-50ae-478d-8303-55d8991d2d34")
 	(paper "A3")
 	(lib_symbols
+		(symbol "39291048:39291048"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -7.62 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "39291048"
+				(at -7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "39291048:MOLEX_39291048"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Molex"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "11.70mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "N1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "39291048"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "Connector Header Through Hole, Right Angle 4 position 0.165 (4.20mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Molex"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "39291048_0_0"
+				(polyline
+					(pts
+						(xy -7.62 0) (xy -5.715 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -2.54) (xy -5.715 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -6.985 -0.3175)
+					(end -5.3975 0.3175)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -6.985 -2.8575)
+					(end -5.3975 -2.2225)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.3975 -0.3175)
+					(end 6.985 0.3175)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.3975 -2.8575)
+					(end 6.985 -2.2225)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 5.715 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 5.715 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "5023860570:5023860570"
 			(pin_names
 				(offset 1.016)
@@ -8468,359 +8820,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "XT30PW-M:XT30PW-M"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -7.62 3.302 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "XT30PW-M"
-				(at -7.62 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "XT30PW-M:AMASS_XT30PW-M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "AMASS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "1.2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "XT30PW-M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Amass"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SNAPEDA_PN" "XT30PW-M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "XT30PW-M_0_0"
-				(polyline
-					(pts
-						(xy -7.62 2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -5.08) (xy -7.62 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.2225 -0.3175)
-					(end -0.635 0.3175)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.2225 -2.8575)
-					(end -0.635 -2.2225)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -7.62 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.905 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy -1.27 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 5.08 0 180)
-					(length 5.08)
-					(name "P"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "P"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 5.08 -2.54 180)
-					(length 5.08)
-					(name "N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -9021,7 +9020,7 @@
 	)
 	(rectangle
 		(start 273.304 162.56)
-		(end 389.89 204.47)
+		(end 394.97 204.47)
 		(stroke
 			(width 0)
 			(type default)
@@ -9346,6 +9345,16 @@
 		)
 		(uuid "addd22f3-aade-4ecf-a1a6-267b3d928a30")
 	)
+	(text "https://ie.rs-online.com/web/p/pcb-headers/2155821"
+		(exclude_from_sim no)
+		(at 358.394 161.544 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b087fc2a-287e-463e-ae5b-53a72bfa0560")
+	)
 	(text "Takes the VCC line, and increases the voltage to +32.5V.\n"
 		(exclude_from_sim no)
 		(at 58.42 33.782 0)
@@ -9609,6 +9618,18 @@
 		(uuid "433404ee-8108-4eae-92df-c2f38e21f937")
 	)
 	(junction
+		(at 361.95 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c9dc5e4-6e6e-41ba-9b26-0f8f92d6183c")
+	)
+	(junction
+		(at 361.95 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d60d73a-fb80-434e-8053-65b2deaa4973")
+	)
+	(junction
 		(at 251.46 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9849,6 +9870,12 @@
 		(uuid "b4f0fe52-718e-40b1-b3f1-33f56bed1c95")
 	)
 	(junction
+		(at 387.35 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b974c3b8-bc27-40fc-b1d7-43ac950881e9")
+	)
+	(junction
 		(at 284.48 195.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10005,10 +10032,10 @@
 		(uuid "f3123420-3ecb-4a52-8c16-8544b2335242")
 	)
 	(junction
-		(at 361.95 176.53)
+		(at 389.89 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f4f445b5-fc3b-4480-8316-bdecdb386592")
+		(uuid "f359bc9f-f75e-406b-bee3-b0ebf796dd99")
 	)
 	(junction
 		(at 356.87 227.33)
@@ -10098,6 +10125,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 179.07) (xy 361.95 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "067caa36-4012-4eab-a8dc-cfc28d6d6b88")
+	)
+	(wire
+		(pts
 			(xy 99.06 62.23) (xy 99.06 57.15)
 		)
 		(stroke
@@ -10145,6 +10182,16 @@
 			(type default)
 		)
 		(uuid "07e74cc3-a0fb-4e8e-baa2-298ff8266014")
+	)
+	(wire
+		(pts
+			(xy 361.95 180.34) (xy 365.76 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0891f149-3f6c-41c7-8f4e-9223c8bed72b")
 	)
 	(wire
 		(pts
@@ -10268,6 +10315,16 @@
 	)
 	(wire
 		(pts
+			(xy 383.54 179.07) (xy 387.35 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "151b4c09-e96b-4949-b305-139ed7907b3c")
+	)
+	(wire
+		(pts
 			(xy 194.31 128.27) (xy 194.31 129.54)
 		)
 		(stroke
@@ -10305,16 +10362,6 @@
 			(type default)
 		)
 		(uuid "19de6d4f-2c5c-4545-b202-7f67aafcfff3")
-	)
-	(wire
-		(pts
-			(xy 361.95 176.53) (xy 365.76 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b9dba1c-f1c2-489f-a104-87f9f1b98487")
 	)
 	(wire
 		(pts
@@ -10618,6 +10665,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 113.03) (xy 389.89 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ed25dc-7fe9-459d-a7db-e44be677fde9")
+	)
+	(wire
+		(pts
 			(xy 86.36 101.6) (xy 86.36 106.68)
 		)
 		(stroke
@@ -10755,16 +10812,6 @@
 			(type default)
 		)
 		(uuid "438d0607-907a-4df0-a55c-94a352137994")
-	)
-	(wire
-		(pts
-			(xy 358.14 176.53) (xy 361.95 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45e3a110-7409-4e4a-8e36-74da80ce1352")
 	)
 	(wire
 		(pts
@@ -11438,6 +11485,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 175.26) (xy 387.35 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8114f470-a073-44a3-98d0-d0f37ea152d7")
+	)
+	(wire
+		(pts
 			(xy 199.39 76.2) (xy 200.66 76.2)
 		)
 		(stroke
@@ -11898,6 +11955,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 181.61) (xy 365.76 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7a86daa-413d-4b7c-8172-7c8ee8c97688")
+	)
+	(wire
+		(pts
 			(xy 115.57 172.72) (xy 118.11 172.72)
 		)
 		(stroke
@@ -11955,6 +12022,16 @@
 			(type default)
 		)
 		(uuid "bf2f32ce-b8ee-46b1-9f00-b021c6c5a0e7")
+	)
+	(wire
+		(pts
+			(xy 387.35 179.07) (xy 387.35 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c07fcaa9-7cc6-4a91-b02b-b987eafe7c83")
 	)
 	(wire
 		(pts
@@ -12068,7 +12145,7 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 187.96) (xy 361.95 179.07)
+			(xy 361.95 187.96) (xy 361.95 181.61)
 		)
 		(stroke
 			(width 0)
@@ -12105,6 +12182,16 @@
 			(type default)
 		)
 		(uuid "c8c55f18-5d8d-431e-b385-14e5fb86fd38")
+	)
+	(wire
+		(pts
+			(xy 365.76 180.34) (xy 365.76 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c99558d0-3e9f-4d96-8248-3742e7aa1573")
 	)
 	(wire
 		(pts
@@ -12478,6 +12565,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 180.34) (xy 361.95 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec20cffb-6412-465b-825d-a58d871ca2a2")
+	)
+	(wire
+		(pts
 			(xy 43.18 132.08) (xy 52.07 132.08)
 		)
 		(stroke
@@ -12585,6 +12682,16 @@
 			(type default)
 		)
 		(uuid "f41a517d-6d9e-411c-b9c9-eebfbb1dfd74")
+	)
+	(wire
+		(pts
+			(xy 391.16 120.65) (xy 389.89 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f46ce6b8-28c9-4909-97a2-da1c26e8543a")
 	)
 	(wire
 		(pts
@@ -13010,28 +13117,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DAC_out"
-		(shape input)
-		(at 389.89 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3fbe3112-bf26-4002-8b54-dcf27fc5e2b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 400.4951 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -13560,6 +13645,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DAC_out"
+		(shape input)
+		(at 391.16 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a663c399-9af9-491b-b845-989f0c9fcc59")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 401.7651 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -15232,16 +15339,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 358.14 176.53 270)
+		(at 387.35 175.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0ce26611-5b23-4f21-8672-384d5c6fd5de")
 		(property "Reference" "#PWR046"
-			(at 351.79 176.53 0)
+			(at 387.35 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,16 +15356,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 354.33 176.5299 90)
+			(at 387.35 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 358.14 176.53 0)
+			(at 387.35 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15268,7 +15373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 358.14 176.53 0)
+			(at 387.35 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15277,7 +15382,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 358.14 176.53 0)
+			(at 387.35 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15437,17 +15542,16 @@
 		)
 	)
 	(symbol
-		(lib_id "XT30PW-M:XT30PW-M")
-		(at 367.03 179.07 180)
+		(lib_id "Device:R")
+		(at 389.89 116.84 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "148d4af0-f830-4fae-a0c5-224ff0809bf4")
-		(property "Reference" "J2"
-			(at 375.92 176.5299 0)
+		(uuid "129f8ca9-d053-4e07-897e-d4bfee75a8de")
+		(property "Reference" "R25"
+			(at 387.858 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15455,8 +15559,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "XT30PW-M"
-			(at 375.92 179.0699 0)
+		(property "Value" "1K"
+			(at 389.89 118.618 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15464,18 +15568,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AMASS_XT30PW-M"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 367.03 179.07 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 391.668 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,8 +15577,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 179.07 0)
+		(property "Datasheet" "~"
+			(at 389.89 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15492,146 +15586,25 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "AMASS"
-			(at 367.03 179.07 0)
+		(property "Description" "Resistor"
+			(at 389.89 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "f81e18fb-eb13-44a6-bccb-71f81f5e69e5")
 		)
-		(property "Package" "None"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "1.2"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "XT30PW-M"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Amass"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "XT30PW-M"
-			(at 367.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "N"
-			(uuid "251328bc-e0aa-40c5-9308-af483c3b9c3e")
-		)
-		(pin "P"
-			(uuid "465557ef-0e9f-461c-8114-079299d5da51")
+		(pin "2"
+			(uuid "5c6a44ae-f6c4-4c4d-8fb3-f2029f612ba4")
 		)
 		(instances
 			(project "mu"
 				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
-					(reference "J2")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -16090,6 +16063,201 @@
 			(project "mu"
 				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "39291048:39291048")
+		(at 374.65 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bed9b9c-a8e0-4f8f-8dd9-ce3c92272f1e")
+		(property "Reference" "J14"
+			(at 374.65 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "39291048"
+			(at 374.65 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MOLEX_39291048"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Molex"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "11.70mm"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=eda"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N1"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=snap"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "39291048"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Connector Header Through Hole, Right Angle 4 position 0.165 (4.20mm)"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Molex"
+			(at 374.65 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f606e812-ecb2-4cb3-a713-4cc260acd227")
+		)
+		(pin "3"
+			(uuid "b48b95af-5a2c-4a4f-af6b-d069f42352b9")
+		)
+		(pin "4"
+			(uuid "579cedf2-538a-4984-bf12-7259f39df6d9")
+		)
+		(pin "2"
+			(uuid "10bf682a-ac63-4ac7-8760-68fa440e8fc9")
+		)
+		(instances
+			(project ""
+				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -20457,6 +20625,75 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 389.89 124.46 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "723fc6af-e580-4be8-9141-ffc59b86023b")
+		(property "Reference" "R26"
+			(at 387.858 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "9K"
+			(at 389.89 125.984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 391.668 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 389.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 389.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "260be37e-cb11-492e-9f33-5a7dbe4c19a8")
+		)
+		(pin "2"
+			(uuid "1c288f3b-e049-42cf-bd8a-47871864434f")
+		)
+		(instances
+			(project "mu"
+				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 234.95 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21705,6 +21942,73 @@
 			(project "mu"
 				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 391.16 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9976793f-ff62-45b3-b733-95abbd382c02")
+		(property "Reference" "#PWR014"
+			(at 397.51 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 394.97 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 391.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "717ce02e-227e-4d40-8834-69d3edfda293")
+		)
+		(instances
+			(project "mu"
+				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
