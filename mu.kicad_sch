@@ -8935,8 +8935,8 @@
 		(uuid 448ca492-df1e-4f58-8962-cf80e7b297bd)
 	)
 	(rectangle
-		(start 196.596 154.686)
-		(end 267.462 204.724)
+		(start 194.31 154.686)
+		(end 268.732 204.724)
 		(stroke
 			(width 0)
 			(type default)
@@ -9020,7 +9020,7 @@
 	)
 	(rectangle
 		(start 273.304 162.56)
-		(end 394.97 204.47)
+		(end 379.73 204.47)
 		(stroke
 			(width 0)
 			(type default)
@@ -9208,16 +9208,6 @@
 			)
 		)
 		(uuid "5de2ce27-9a80-4ec0-bbf0-760be735864d")
-	)
-	(text "XT30 for battery"
-		(exclude_from_sim no)
-		(at 355.346 196.596 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5eda583e-3b33-46b1-b868-25204675c4b9")
 	)
 	(text "interboard connector standard\n\n(not placed, just for reference)"
 		(exclude_from_sim no)
@@ -9618,13 +9608,7 @@
 		(uuid "433404ee-8108-4eae-92df-c2f38e21f937")
 	)
 	(junction
-		(at 361.95 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c9dc5e4-6e6e-41ba-9b26-0f8f92d6183c")
-	)
-	(junction
-		(at 361.95 181.61)
+		(at 350.52 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d60d73a-fb80-434e-8053-65b2deaa4973")
@@ -9870,7 +9854,7 @@
 		(uuid "b4f0fe52-718e-40b1-b3f1-33f56bed1c95")
 	)
 	(junction
-		(at 387.35 179.07)
+		(at 375.92 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b974c3b8-bc27-40fc-b1d7-43ac950881e9")
@@ -10125,16 +10109,6 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 179.07) (xy 361.95 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "067caa36-4012-4eab-a8dc-cfc28d6d6b88")
-	)
-	(wire
-		(pts
 			(xy 99.06 62.23) (xy 99.06 57.15)
 		)
 		(stroke
@@ -10182,16 +10156,6 @@
 			(type default)
 		)
 		(uuid "07e74cc3-a0fb-4e8e-baa2-298ff8266014")
-	)
-	(wire
-		(pts
-			(xy 361.95 180.34) (xy 365.76 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0891f149-3f6c-41c7-8f4e-9223c8bed72b")
 	)
 	(wire
 		(pts
@@ -10315,7 +10279,7 @@
 	)
 	(wire
 		(pts
-			(xy 383.54 179.07) (xy 387.35 179.07)
+			(xy 372.11 179.07) (xy 375.92 179.07)
 		)
 		(stroke
 			(width 0)
@@ -10725,7 +10689,7 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 187.96) (xy 360.68 187.96)
+			(xy 350.52 187.96) (xy 349.25 187.96)
 		)
 		(stroke
 			(width 0)
@@ -11485,7 +11449,7 @@
 	)
 	(wire
 		(pts
-			(xy 387.35 175.26) (xy 387.35 179.07)
+			(xy 375.92 175.26) (xy 375.92 179.07)
 		)
 		(stroke
 			(width 0)
@@ -11955,7 +11919,7 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 181.61) (xy 365.76 181.61)
+			(xy 350.52 181.61) (xy 354.33 181.61)
 		)
 		(stroke
 			(width 0)
@@ -12025,7 +11989,7 @@
 	)
 	(wire
 		(pts
-			(xy 387.35 179.07) (xy 387.35 181.61)
+			(xy 375.92 179.07) (xy 375.92 181.61)
 		)
 		(stroke
 			(width 0)
@@ -12125,7 +12089,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 179.07) (xy 355.6 180.34)
+			(xy 344.17 179.07) (xy 344.17 180.34)
 		)
 		(stroke
 			(width 0)
@@ -12145,7 +12109,7 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 187.96) (xy 361.95 181.61)
+			(xy 350.52 187.96) (xy 350.52 181.61)
 		)
 		(stroke
 			(width 0)
@@ -12182,16 +12146,6 @@
 			(type default)
 		)
 		(uuid "c8c55f18-5d8d-431e-b385-14e5fb86fd38")
-	)
-	(wire
-		(pts
-			(xy 365.76 180.34) (xy 365.76 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c99558d0-3e9f-4d96-8248-3742e7aa1573")
 	)
 	(wire
 		(pts
@@ -12565,7 +12519,7 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 180.34) (xy 361.95 181.61)
+			(xy 350.52 179.07) (xy 350.52 181.61)
 		)
 		(stroke
 			(width 0)
@@ -12925,7 +12879,7 @@
 	)
 	(global_label "VBAT_Local"
 		(shape input)
-		(at 350.52 187.96 180)
+		(at 339.09 187.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12935,7 +12889,7 @@
 		)
 		(uuid "0f87331c-ef7f-46a8-b0cd-2e6b7a2f6145")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 337.0725 187.96 0)
+			(at 325.6425 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15339,7 +15293,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 387.35 175.26 180)
+		(at 375.92 175.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15347,7 +15301,7 @@
 		(dnp no)
 		(uuid "0ce26611-5b23-4f21-8672-384d5c6fd5de")
 		(property "Reference" "#PWR046"
-			(at 387.35 168.91 0)
+			(at 375.92 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15356,7 +15310,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 387.35 170.18 0)
+			(at 375.92 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15364,7 +15318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 175.26 0)
+			(at 375.92 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15373,7 +15327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 387.35 175.26 0)
+			(at 375.92 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15382,7 +15336,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 387.35 175.26 0)
+			(at 375.92 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16070,7 +16024,7 @@
 	)
 	(symbol
 		(lib_id "39291048:39291048")
-		(at 374.65 179.07 0)
+		(at 363.22 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16079,7 +16033,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bed9b9c-a8e0-4f8f-8dd9-ce3c92272f1e")
 		(property "Reference" "J14"
-			(at 374.65 171.45 0)
+			(at 363.22 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16087,7 +16041,7 @@
 			)
 		)
 		(property "Value" "39291048"
-			(at 374.65 173.99 0)
+			(at 363.22 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16095,7 +16049,7 @@
 			)
 		)
 		(property "Footprint" "MOLEX_39291048"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16105,7 +16059,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16114,7 +16068,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16123,7 +16077,7 @@
 			)
 		)
 		(property "MF" "Molex"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16133,7 +16087,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "11.70mm"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16143,7 +16097,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16153,7 +16107,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16163,7 +16117,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=eda"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16173,7 +16127,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16183,7 +16137,7 @@
 			)
 		)
 		(property "PARTREV" "N1"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16193,7 +16147,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/39291048/Molex/view-part/?ref=snap"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16203,7 +16157,7 @@
 			)
 		)
 		(property "MP" "39291048"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16213,7 +16167,7 @@
 			)
 		)
 		(property "Description_1" "Connector Header Through Hole, Right Angle 4 position 0.165 (4.20mm)"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16223,7 +16177,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16233,7 +16187,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Molex"
-			(at 374.65 179.07 0)
+			(at 363.22 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20966,7 +20920,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 355.6 179.07 270)
+		(at 344.17 179.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20975,7 +20929,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b5226fc-b751-4590-804e-3c39e893a2c6")
 		(property "Reference" "#PWR053"
-			(at 349.25 179.07 0)
+			(at 337.82 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20984,7 +20938,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 351.79 179.0699 90)
+			(at 340.36 179.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20993,7 +20947,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 355.6 179.07 0)
+			(at 344.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21002,7 +20956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 355.6 179.07 0)
+			(at 344.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21011,7 +20965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 355.6 179.07 0)
+			(at 344.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25532,7 +25486,7 @@
 	)
 	(symbol
 		(lib_id "IPD90P04P4L04ATMA1:IPD90P04P4L04ATMA1")
-		(at 355.6 180.34 270)
+		(at 344.17 180.34 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25540,7 +25494,7 @@
 		(dnp no)
 		(uuid "ec531a66-daa4-4a92-bc14-8c64cba18ea4")
 		(property "Reference" "Q1"
-			(at 355.6 193.04 90)
+			(at 344.17 193.04 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25548,7 +25502,7 @@
 			)
 		)
 		(property "Value" "IPD90P04P4L04ATMA1"
-			(at 370.84 193.04 90)
+			(at 359.41 193.04 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25556,7 +25510,7 @@
 			)
 		)
 		(property "Footprint" "footprints:PG-TO252-3-313_INF-L"
-			(at 355.6 180.34 0)
+			(at 344.17 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25566,7 +25520,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IPD90P04P4L_04-DS-v01_00-en.pdf?fileId=db3a30432f69f146012f7829059b2dee"
-			(at 355.6 180.34 0)
+			(at 344.17 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25576,7 +25530,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 355.6 180.34 0)
+			(at 344.17 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
