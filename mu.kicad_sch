@@ -9068,7 +9068,7 @@
 	)
 	(text "\nmust go to an adc pin"
 		(exclude_from_sim no)
-		(at 229.362 127.508 0)
+		(at 232.156 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9645,8 +9645,12 @@
 		(uuid "fc80d0c6-742c-41eb-b4e7-f0066da3dc90")
 	)
 	(no_connect
-		(at 46.99 175.26)
-		(uuid "8e4acd00-4271-48d8-ba2b-85ce41ed4778")
+		(at 46.99 180.34)
+		(uuid "50416d1a-107a-414b-9a06-e303fadbafa1")
+	)
+	(no_connect
+		(at 46.99 177.8)
+		(uuid "9a7db9e0-0df6-4053-809c-1b51101a11a8")
 	)
 	(no_connect
 		(at 330.2 121.92)
@@ -9986,16 +9990,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 177.8) (xy 46.99 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23058d20-0951-4554-b524-e4453d478790")
-	)
-	(wire
-		(pts
 			(xy 104.14 133.35) (xy 111.76 133.35)
 		)
 		(stroke
@@ -10193,16 +10187,6 @@
 			(type default)
 		)
 		(uuid "38f80c40-1183-40b0-89fb-4a6fb0a2ddb2")
-	)
-	(wire
-		(pts
-			(xy 41.91 175.26) (xy 41.91 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b6e0cf7-0c95-46c7-80c2-9d94423aa04f")
 	)
 	(wire
 		(pts
@@ -12298,28 +12282,6 @@
 			)
 		)
 	)
-	(global_label "Latch_Out"
-		(shape input)
-		(at 46.99 180.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "062bdcd2-b4b2-447d-a261-8969c45d9406")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.6916 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HV"
 		(shape input)
 		(at 105.41 39.37 0)
@@ -12844,6 +12806,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CATCH_OUT"
+		(shape input)
+		(at 46.99 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8127cf24-fb89-42c1-a3ce-ed169ace0ea6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.4819 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13455,28 +13439,6 @@
 		(uuid "e797a302-2357-44d6-811c-7df41846ff8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 35.3567 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Latch_Rst"
-		(shape input)
-		(at 41.91 177.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ed06ef95-0b56-40c0-8471-9762ab0baabe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.793 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17807,193 +17769,6 @@
 			(project "mu"
 				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "S2761-46R:S2761-46R")
-		(at 41.91 170.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "58da1ae8-86d8-4117-8a92-577b83e0039a")
-		(property "Reference" "RST1"
-			(at 43.688 169.926 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "S2761-46R"
-			(at 42.418 172.212 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "HARWIN_S2761-46R"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Harwin"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.15mm"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/S2761-46R/Harwin/view-part/?ref=eda"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "1"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/S2761-46R/Harwin/view-part/?ref=snap"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "S2761-46R"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMT Test Point, 1.15mm high, tin, Tape and Reeled"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Harwin"
-			(at 41.91 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e9f785da-98d7-4df3-962a-083c0d72c7ab")
-		)
-		(instances
-			(project "mu"
-				(path "/0020f91a-50ae-478d-8303-55d8991d2d34"
-					(reference "RST1")
 					(unit 1)
 				)
 			)
