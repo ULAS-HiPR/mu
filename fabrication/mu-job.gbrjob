@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.6"
     },
-    "CreationDate": "2026-02-27T09:39:21+00:00"
+    "CreationDate": "2026-03-01T21:51:09+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -81,6 +81,16 @@
     {
       "Path": "mu-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "mu-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "mu-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
