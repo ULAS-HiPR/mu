@@ -42,3 +42,10 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# PlatformIO firmware builds
+.pio/
+.pioenvs/
+.piolibdeps/
+firmware/.pio/
+firmware/scripts/__pycache__/

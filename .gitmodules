@@ -1,0 +1,8 @@
+[submodule "firmware/lib/comheadan"]
+	path = firmware/lib/comheadan
+	url = https://github.com/ULAS-HiPR/comheadan.git
+	branch = codex/can-integration-ready
+[submodule "firmware/lib/braiteoiri"]
+	path = firmware/lib/braiteoiri
+	url = https://github.com/ULAS-HiPR/braiteoiri.git
+	branch = Flash

@@ -1,0 +1,43 @@
+{
+  "build": {
+    "cpu": "cortex-m0",
+    "extra_flags": "-DSTM32F0 -DSTM32F042x6",
+    "f_cpu": "48000000L",
+    "ldscript": "STM32F042F6PX_FLASH.ld",
+    "mcu": "stm32f042f6p6",
+    "product_line": "STM32F042x6",
+    "variant": "STM32F0xx/F042K(4-6)T"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32F042F6",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_target": "stm32f0x",
+    "svd_path": "STM32F042x.svd"
+  },
+  "frameworks": [
+    "cmsis",
+    "stm32cube"
+  ],
+  "name": "Mu STM32F042F6P6",
+  "url": "https://github.com/ULAS-HiPR/mu",
+  "upload": {
+    "maximum_ram_size": 6144,
+    "maximum_size": 32768,
+    "protocol": "stlink",
+    "protocols": [
+      "cmsis-dap",
+      "jlink",
+      "stlink",
+      "blackmagic"
+    ]
+  },
+  "vendor": "ULAS-HiPR"
+}
