@@ -6,6 +6,7 @@
 
 
 # Temporary files
+.DS_Store
 *.000
 *.bak
 *.bck
@@ -49,3 +50,5 @@ fp-info-cache
 .piolibdeps/
 firmware/.pio/
 firmware/scripts/__pycache__/
+demo/runs/
+demo/__pycache__/

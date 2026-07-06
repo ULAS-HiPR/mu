@@ -13,9 +13,10 @@ namespace {
 
 constexpr std::uint32_t kStatusMagic = 0x4D55464CUL; // MUFL
 constexpr std::uint32_t kRecordMagic = 0x4D555245UL; // MURE
-constexpr std::uint32_t kFirmwareVersion = 1UL;
+constexpr std::uint32_t kFirmwareVersion = 2UL;
+constexpr std::uint32_t kFirmwareBuildId = 20260701UL;
 constexpr std::uint32_t kLogStart = 0x00000000UL;
-constexpr std::uint32_t kLogLength = 0x00100000UL; // 1 MB: enough for ~2 h, faster preflight erase.
+constexpr std::uint32_t kLogLength = 0x01000000UL; // full 16 MB external flash.
 constexpr std::uint32_t kSampleIntervalUs = 10UL;
 constexpr std::uint32_t kTriggerDeltaRaw = 250UL;
 constexpr std::uint32_t kTriggerConsecutiveSamples = 4UL;
@@ -26,11 +27,16 @@ constexpr std::uint32_t kPressurePeriodMs = 1000UL;
 constexpr std::uint32_t kAdcDmaSamples = 1024UL;
 constexpr std::uint32_t kAdcDmaHalfSamples = kAdcDmaSamples / 2UL;
 constexpr std::uint32_t kEventQueueDepth = 4UL;
+constexpr std::uint32_t kFlashReadChunkBytes = 512UL;
+constexpr std::uint32_t kMailboxMagic = 0x4D554442UL; // MUDB
+constexpr std::uint32_t kMailboxVersion = 1UL;
 
 #ifndef MU_ERASE_FLASH_ON_BOOT
 constexpr bool kEraseFlashOnBoot = false;
+constexpr std::uint32_t kFirmwareFlavor = 1UL;
 #else
 constexpr bool kEraseFlashOnBoot = true;
+constexpr std::uint32_t kFirmwareFlavor = 2UL;
 #endif
 
 enum class MuLogPayloadType : std::uint16_t {
@@ -140,6 +146,32 @@ struct MuFlightStatus {
     std::uint32_t event_queue_depth;
     std::uint32_t event_queue_max_depth;
     std::uint32_t event_queue_drops;
+    std::uint32_t firmware_flavor;
+    std::uint32_t firmware_build_id;
+    std::uint32_t log_start;
+    std::uint32_t log_length;
+    std::uint32_t log_used_bytes;
+    std::uint32_t log_full;
+    std::uint32_t flash_read_state;
+    std::uint32_t flash_read_result;
+    std::uint32_t flash_read_seq;
+    std::uint32_t flash_read_bytes;
+};
+
+struct MuFlashReadMailbox {
+    std::uint32_t magic;
+    std::uint32_t version;
+    std::uint32_t command;
+    std::uint32_t state;
+    std::uint32_t request_seq;
+    std::uint32_t response_seq;
+    std::uint32_t address;
+    std::uint32_t length;
+    std::uint32_t bytes_read;
+    std::uint32_t result;
+    std::uint32_t log_start;
+    std::uint32_t log_length;
+    std::uint8_t buffer[kFlashReadChunkBytes];
 };
 
 alignas(4) volatile std::uint16_t g_adc_dma_samples[kAdcDmaSamples] = {};
@@ -471,6 +503,7 @@ bool append_typed(FlashLogger& logger,
 
 extern "C" {
 volatile MuFlightStatus g_mu_flight = {};
+alignas(4) volatile MuFlashReadMailbox g_mu_flash_mailbox = {};
 
 void SysTick_Handler()
 {
@@ -479,6 +512,99 @@ void SysTick_Handler()
 }
 
 namespace {
+
+enum class MailboxCommand : std::uint32_t {
+    None = 0U,
+    ReadFlash = 1U,
+};
+
+enum class MailboxState : std::uint32_t {
+    Idle = 0U,
+    Busy = 1U,
+    Done = 2U,
+    Error = 3U,
+};
+
+enum class MailboxResult : std::uint32_t {
+    Ok = 0U,
+    BadCommand = 1U,
+    BadRange = 2U,
+    FlashError = 3U,
+};
+
+void update_log_status(const FlashLogger& logger)
+{
+    const FlashLogInfo info = logger.info();
+    g_mu_flight.run_id = info.run_id;
+    g_mu_flight.records_written = info.record_count;
+    g_mu_flight.log_used_bytes = info.used_bytes;
+    g_mu_flight.log_full = info.full ? 1U : 0U;
+}
+
+bool mailbox_range_ok(std::uint32_t address, std::uint32_t length)
+{
+    if (length == 0U || length > kFlashReadChunkBytes) {
+        return false;
+    }
+    if (address < kLogStart) {
+        return false;
+    }
+
+    const std::uint32_t offset = address - kLogStart;
+    return offset <= kLogLength && length <= (kLogLength - offset);
+}
+
+void finish_mailbox(std::uint32_t seq,
+                    MailboxState state,
+                    MailboxResult result,
+                    std::uint32_t bytes_read)
+{
+    g_mu_flash_mailbox.bytes_read = bytes_read;
+    g_mu_flash_mailbox.result = static_cast<std::uint32_t>(result);
+    g_mu_flash_mailbox.response_seq = seq;
+    g_mu_flash_mailbox.state = static_cast<std::uint32_t>(state);
+    g_mu_flash_mailbox.command = static_cast<std::uint32_t>(MailboxCommand::None);
+
+    g_mu_flight.flash_read_state = static_cast<std::uint32_t>(state);
+    g_mu_flight.flash_read_result = static_cast<std::uint32_t>(result);
+    g_mu_flight.flash_read_seq = seq;
+    g_mu_flight.flash_read_bytes = bytes_read;
+}
+
+void service_flash_mailbox(MX25L128& flash)
+{
+    const auto command =
+        static_cast<MailboxCommand>(g_mu_flash_mailbox.command);
+    if (command == MailboxCommand::None) {
+        return;
+    }
+
+    const std::uint32_t seq = g_mu_flash_mailbox.request_seq;
+    if (command != MailboxCommand::ReadFlash) {
+        finish_mailbox(seq, MailboxState::Error, MailboxResult::BadCommand, 0U);
+        return;
+    }
+
+    const std::uint32_t address = g_mu_flash_mailbox.address;
+    const std::uint32_t length = g_mu_flash_mailbox.length;
+    g_mu_flash_mailbox.state = static_cast<std::uint32_t>(MailboxState::Busy);
+    g_mu_flash_mailbox.bytes_read = 0U;
+    g_mu_flash_mailbox.result = static_cast<std::uint32_t>(MailboxResult::Ok);
+    g_mu_flight.flash_read_state = static_cast<std::uint32_t>(MailboxState::Busy);
+
+    if (!mailbox_range_ok(address, length)) {
+        finish_mailbox(seq, MailboxState::Error, MailboxResult::BadRange, 0U);
+        return;
+    }
+
+    auto* buffer = const_cast<std::uint8_t*>(g_mu_flash_mailbox.buffer);
+    if (!flash.read(address, buffer, length)) {
+        finish_mailbox(seq, MailboxState::Error, MailboxResult::FlashError, 0U);
+        return;
+    }
+
+    finish_mailbox(seq, MailboxState::Done, MailboxResult::Ok, length);
+}
 
 void update_queue_depth_status()
 {
@@ -692,6 +818,18 @@ int main()
     g_mu_flight.version = kFirmwareVersion;
     g_mu_flight.system_hz = SystemCoreClock;
     g_mu_flight.state = static_cast<std::uint32_t>(CaptureState::Arming);
+    g_mu_flight.firmware_flavor = kFirmwareFlavor;
+    g_mu_flight.firmware_build_id = kFirmwareBuildId;
+    g_mu_flight.log_start = kLogStart;
+    g_mu_flight.log_length = kLogLength;
+
+    g_mu_flash_mailbox.magic = kMailboxMagic;
+    g_mu_flash_mailbox.version = kMailboxVersion;
+    g_mu_flash_mailbox.command = static_cast<std::uint32_t>(MailboxCommand::None);
+    g_mu_flash_mailbox.state = static_cast<std::uint32_t>(MailboxState::Idle);
+    g_mu_flash_mailbox.result = static_cast<std::uint32_t>(MailboxResult::Ok);
+    g_mu_flash_mailbox.log_start = kLogStart;
+    g_mu_flash_mailbox.log_length = kLogLength;
 
     MuSpiHandler flash_spi(GPIOA,
                            mu::kFlashCsPin,
@@ -731,9 +869,7 @@ int main()
     g_mu_flight.logger_ok = logger_ok ? 1U : 0U;
     g_mu_flight.logger_status = static_cast<std::uint32_t>(logger.status());
     if (logger_ok) {
-        const FlashLogInfo info = logger.info();
-        g_mu_flight.run_id = info.run_id;
-        g_mu_flight.records_written = info.record_count;
+        update_log_status(logger);
     }
 
     if (logger_ok) {
@@ -755,7 +891,7 @@ int main()
         boot.baro_ok = baro_init_ok ? 1U : 0U;
         if (append_typed(logger, &boot, sizeof(boot), millis(), MuLogPayloadType::Boot)) {
             g_mu_flight.boot_logged = 1U;
-            g_mu_flight.records_written = logger.info().record_count;
+            update_log_status(logger);
         }
     }
 
@@ -774,6 +910,7 @@ int main()
 
     MuEventRecord event{};
     while (true) {
+        service_flash_mailbox(flash);
         (void)process_adc_available(kAdcDmaSamples);
 
         const std::uint32_t now = millis();
@@ -790,8 +927,9 @@ int main()
                 g_mu_flight.logger_status =
                     static_cast<std::uint32_t>(logger.status());
             } else {
-                g_mu_flight.records_written = logger.info().record_count;
+                update_log_status(logger);
             }
+            service_flash_mailbox(flash);
             (void)process_adc_available(kAdcDmaSamples);
         }
 
@@ -829,9 +967,10 @@ int main()
                     g_mu_flight.logger_status =
                         static_cast<std::uint32_t>(logger.status());
                 } else {
-                    g_mu_flight.records_written = logger.info().record_count;
+                    update_log_status(logger);
                 }
             }
+            service_flash_mailbox(flash);
             (void)process_adc_available(kAdcDmaSamples);
         }
     }

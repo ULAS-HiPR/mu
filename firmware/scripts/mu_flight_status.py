@@ -49,6 +49,16 @@ FIELDS = [
     "event_queue_depth",
     "event_queue_max_depth",
     "event_queue_drops",
+    "firmware_flavor",
+    "firmware_build_id",
+    "log_start",
+    "log_length",
+    "log_used_bytes",
+    "log_full",
+    "flash_read_state",
+    "flash_read_result",
+    "flash_read_seq",
+    "flash_read_bytes",
 ]
 
 
@@ -128,15 +138,17 @@ def main():
         else:
             print(
                 "t={:6.1f}s up={}ms state={} latest={}mV base={}mV "
-                "flash={} jedec=0x{:06X} logger={} lstat={} run={} rec={} "
+                "fw={}/{} flash={} jedec=0x{:06X} logger={} lstat={} run={} rec={} "
                 "evt={} prs={} baro={} p={}Pa temp={:.2f}C alt={}mm "
                 "last_amp={}mV q={}/{} qdrop={} dma={}/{} derr={} aovr={} "
-                "fail_e={} fail_p={}".format(
+                "fail_e={} fail_p={} log={}/{} full={} mbox={}/{} seq={} bytes={}".format(
                     elapsed,
                     data["uptime_ms"],
                     data["state"],
                     data["latest_mv"],
                     data["baseline_mv"],
+                    data["firmware_flavor"],
+                    data["firmware_build_id"],
                     data["flash_ok"],
                     data["flash_jedec"],
                     data["logger_ok"],
@@ -159,6 +171,13 @@ def main():
                     data["adc_overrun_count"],
                     data["event_log_failures"],
                     data["pressure_log_failures"],
+                    data["log_used_bytes"],
+                    data["log_length"],
+                    data["log_full"],
+                    data["flash_read_state"],
+                    data["flash_read_result"],
+                    data["flash_read_seq"],
+                    data["flash_read_bytes"],
                 ),
                 flush=True,
             )

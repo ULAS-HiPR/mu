@@ -10,8 +10,8 @@ constexpr std::uint32_t kSampleIntervalUs = 10UL;
 constexpr std::uint32_t kPreSamples = 256UL;
 constexpr std::uint32_t kPostSamples = 768UL;
 constexpr std::uint32_t kTotalSamples = kPreSamples + kPostSamples;
-constexpr std::uint32_t kTriggerDeltaRaw = 150UL; // About 120 mV at 3.3 V.
-constexpr std::uint32_t kTriggerConsecutiveSamples = 4UL;
+constexpr std::uint32_t kTriggerDeltaRaw = 32UL; // About 26 mV at 3.3 V.
+constexpr std::uint32_t kTriggerConsecutiveSamples = 1UL;
 constexpr std::uint32_t kWarmupSamples = 2048UL;
 
 enum CaptureState : std::uint32_t {
@@ -187,7 +187,9 @@ int main()
             g_mu_pulse.state = Armed;
         }
 
-        if (g_mu_pulse.state == Armed && raw + kTriggerDeltaRaw < updated_baseline) {
+        if (g_mu_pulse.state == Armed &&
+            (raw + kTriggerDeltaRaw < updated_baseline ||
+             raw > updated_baseline + kTriggerDeltaRaw)) {
             ++below_trigger_count;
         } else if (g_mu_pulse.state == Armed) {
             below_trigger_count = 0U;
