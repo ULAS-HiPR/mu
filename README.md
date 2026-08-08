@@ -3,7 +3,9 @@
 Mu is a standalone SiPM/scintillator cosmic-ray detector and flight logger developed alongside the [Ogma avionics stack](https://sean-osullivan.com/projects/ogma/). It is designed to fly as its own black box: battery power in, particle and pressure data logged to onboard flash, then post-flight readout.
 
 > [!CAUTION]
-> **Replication warning:** The Rev 1 schematic contains a known error: the `MICROFC-60035-SMT-TR1` SiPM polarity is reversed. Do not reproduce that connection as drawn. Verify anode and cathode orientation against the Onsemi documentation and correct it before fabrication.
+> **Rev 1 assembly corrections:** The `MICROFC-60035-SMT-TR1` SiPM footprint nets are reversed. On an existing Rev 1 PCB, mount U3 180 degrees from the orientation indicated by the footprint's pin-1 marker. This puts SiPM pin 3 (cathode) on PCB pad 1, the filtered HV-bias node, and SiPM pin 1 (anode) on PCB pad 3, the U5 inverting-input node. Pins 2 (fast output) and 4 (no connect) then exchange two unused PCB pads.
+>
+> The Rev 1 footprint also connects centre pad 5 to AGND. [Onsemi specifies pin 5 as no connect and recommends leaving the paddle unsoldered and floating](https://www.onsemi.com/download/data-sheet/pdf/microc-series-d.pdf). On the working board, a tiny piece of Blu Tack on the PCB beneath pad 5 kept the centre paddle off the board, and the sensor was attached to four small solder balls around the outer pads. A new PCB revision should correct the pin 1/pin 3 net mapping and leave pad 5 floating instead of relying on either assembly workaround.
 
 ## Hardware
 
