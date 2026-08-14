@@ -36,4 +36,4 @@ Rev 1 PCB fabrication was sponsored through [EasyEDA Education](https://easyeda.
 
 See the [Mu project write-up](https://sean-osullivan.com/projects/mu/) for the detector, bring-up failures, pulse captures, and flight diagnosis.
 
-![Mu schematic](mu.svg)
+![Mu schematic](mu-sch.png)
